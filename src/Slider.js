@@ -7,9 +7,13 @@ import {
   PanResponder,
   View,
   Easing,
-  ViewPropTypes,
   I18nManager,
 } from 'react-native';
+
+import {
+  ViewPropTypes,
+  ImagePropTypes
+} from 'deprecated-react-native-prop-types';
 
 import PropTypes from 'prop-types';
 
@@ -146,7 +150,7 @@ export default class Slider extends PureComponent {
     /**
      * Sets an image for the thumb.
      */
-    thumbImage: Image.propTypes.source,
+    thumbImage: ImagePropTypes.source,
 
     /**
      * Set this to true to visually see the thumb touch rect in green.
